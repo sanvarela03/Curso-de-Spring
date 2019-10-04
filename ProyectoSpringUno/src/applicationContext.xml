@@ -9,20 +9,18 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
+
+<context:property-placeholder location="classpath:datosEmpresa.propiedades"/><!-- para cargar el archivo de datosEmpresa.propiedades -->
 	<!-- creacion de la dependencia -->
 	<bean id="Informe" class="co.edu.IoC.Informe">
 
 	</bean>
 
-
-
-
 	<bean id="Director" class="co.edu.IoC.DirectorEmpleado">
 		<constructor-arg ref="Informe"></constructor-arg>    <!-- ref: para hacer referencia a que dependencia queremos utilizar (la dependencia es la que esta creada arriba) -->
-		<property name="email" value="micorreo_director@gmail.com"></property>
-		<property name="nombreEmpresa" value="Google"></property>
+		<property name="email" value="${email1}"></property> <!-- el metodo se llama setEmail, tener en cuenta la nomenclatura -->
+		<property name="nombreEmpresa" value="${nombreEmpresa1}"></property><!-- el metodo se llama setNombreEmpresa -->
 	</bean>
-
 
 	<bean id="Secretario" class="co.edu.IoC.SecretarioEmpleado"> <!-- bean con un setter -->
 		<property name="informeNuevo" ref="Informe"></property>
