@@ -12,7 +12,7 @@
 
 
 	<context:component-scan
-		base-package="co.edu.pruebaanotations"></context:component-scan>
+		base-package="co.edu.pruebaanotations"></context:component-scan><!-- le decimos al xml que escanee las clases en el paquete idicado -->
 
 
 </beans>
