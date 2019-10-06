@@ -1,4 +1,4 @@
-package co.edu.pruebaannnotations;
+package co.edu.pruebaanotations;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -7,7 +7,7 @@ public class UsoAnnotations {
 	public static void main(String[] args) {
 
 		// leer el xml de configuracion
-		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("config.xml");
+		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 		// pedir un bean al contenedor,(como lo pedimos? : utilizando la java
 		// annotation)

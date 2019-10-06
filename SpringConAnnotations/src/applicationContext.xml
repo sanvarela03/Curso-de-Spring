@@ -9,7 +9,10 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
-	
-	<context:component-scan base-package="co.edu.pruebaannotations"></context:component-scan><!-- le decimos al xml que escanee las clases en el paquete idicado -->
-	
+
+
+	<context:component-scan
+		base-package="co.edu.pruebaanotations"></context:component-scan>
+
+
 </beans>

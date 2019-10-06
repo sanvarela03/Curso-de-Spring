@@ -1,4 +1,4 @@
-package co.edu.pruebaannnotations;
+package co.edu.pruebaanotations;
 
 public interface IEmpleados {
 
